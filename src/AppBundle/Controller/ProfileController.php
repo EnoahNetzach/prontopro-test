@@ -28,7 +28,7 @@ class ProfileController extends BaseFormController
      */
     public function editAction(Request $request, $id = null)
     {
-        $em = $this->get('doctrine')->getEntityManager();
+        $em = $this->get('doctrine')->getManager();
 
         $profile = null;
 
@@ -71,7 +71,7 @@ class ProfileController extends BaseFormController
      */
     public function showAction(Request $request, $id)
     {
-        $em = $this->get('doctrine')->getEntityManager();
+        $em = $this->get('doctrine')->getManager();
 
         $profile = $em->getRepository('AppBundle:Profile')->findProfileByIdJoined($id);
 
@@ -87,7 +87,7 @@ class ProfileController extends BaseFormController
      */
     public function indexAction(Request $request)
     {
-        $em = $this->get('doctrine')->getEntityManager();
+        $em = $this->get('doctrine')->getManager();
 
         $profiles = $em->getRepository('AppBundle:Profile')->findAllProfilesJoined();
 
