@@ -43,7 +43,7 @@ class ProfileController extends BaseFormController
         }
  
         $form = $this->createForm(new ProfileType, $profile, array())
-            ->add('save', 'submit', array('label' => $this->get('translator')->trans('app.buttons.save')))
+            ->add('save', 'submit', array('label' => 'app.buttons.save'))
         ;
 
         $form->handleRequest($request);
