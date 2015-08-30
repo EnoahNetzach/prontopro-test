@@ -1,0 +1,41 @@
+app:
+    buttons:
+        save: 'Save'
+
+    flash:
+        profile:
+            saved: 'Profile succesfully saved.'
+    form:
+        errors: 'There are some errors in the form, please check below.'
+
+    entity:
+        profile:
+            id.label: 'Profile ID'
+            name.label: 'Name'
+            surname.label: 'Surname'
+            description.label: 'Description'
+
+        profile_extended:
+            id.label: 'Profile extended ID'
+            descriptionExtended.label: 'Description Extended'
+
+    html:
+        layout.title: 'Test'
+
+        profile.title:
+            edit: 'Edit profile %id%'
+            new: 'New profile'
+
+        breadcrumb:
+            index: 'Index'
+            data: 'Data'
+            show: 'Profile %id%'
+            edit: 'Edit'
+            new: 'New'
+
+        show: 'Show'
+        new: 'New'
+        edit: 'Edit'
+        export: 'Export'
+
+        matches: '# Matches'

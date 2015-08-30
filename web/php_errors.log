@@ -1,0 +1,63 @@
+[29-Aug-2015 23:27:17 Europe/Rome] PHP Fatal error:  Class 'Sensio\Bundle\DistributionBundle\SensioDistributionBundle' not found in /home/netzach/Sites/prontopro-test/app/AppKernel.php on line 25
+[29-Aug-2015 23:27:17 Europe/Rome] PHP Stack trace:
+[29-Aug-2015 23:27:17 Europe/Rome] PHP   1. {main}() /home/netzach/Sites/prontopro-test/web/app_dev.php:0
+[29-Aug-2015 23:27:17 Europe/Rome] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/netzach/Sites/prontopro-test/web/app_dev.php:28
+[29-Aug-2015 23:27:17 Europe/Rome] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2442
+[29-Aug-2015 23:27:17 Europe/Rome] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2410
+[29-Aug-2015 23:27:17 Europe/Rome] PHP   5. AppKernel->registerBundles() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2581
+[30-Aug-2015 11:18:19 Europe/Rome] PHP Fatal error:  Call to undefined method AppBundle\Entity\Profile::setProfileExtended() in /home/netzach/Sites/prontopro-test/src/AppBundle/Controller/ProfileController.php on line 40
+[30-Aug-2015 11:18:19 Europe/Rome] PHP Stack trace:
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   1. {main}() /home/netzach/Sites/prontopro-test/web/app_dev.php:0
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/netzach/Sites/prontopro-test/web/app_dev.php:28
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2444
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3222
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3071
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   6. call_user_func_array:{/home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109}() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:18:19 Europe/Rome] PHP   7. AppBundle\Controller\ProfileController->editAction() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:18:35 Europe/Rome] PHP Fatal error:  Call to undefined method AppBundle\Entity\ProfileExtended::setUser() in /home/netzach/Sites/prontopro-test/src/AppBundle/Entity/Profile.php on line 145
+[30-Aug-2015 11:18:35 Europe/Rome] PHP Stack trace:
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   1. {main}() /home/netzach/Sites/prontopro-test/web/app_dev.php:0
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/netzach/Sites/prontopro-test/web/app_dev.php:28
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2444
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3222
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3071
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   6. call_user_func_array:{/home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109}() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   7. AppBundle\Controller\ProfileController->editAction() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:18:35 Europe/Rome] PHP   8. AppBundle\Entity\Profile->setProfileExtended() /home/netzach/Sites/prontopro-test/src/AppBundle/Controller/ProfileController.php:40
+[30-Aug-2015 11:18:58 Europe/Rome] PHP Fatal error:  Call to undefined method AppBundle\Controller\ProfileController::formHasErrors() in /home/netzach/Sites/prontopro-test/src/AppBundle/Controller/ProfileController.php on line 58
+[30-Aug-2015 11:18:58 Europe/Rome] PHP Stack trace:
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   1. {main}() /home/netzach/Sites/prontopro-test/web/app_dev.php:0
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/netzach/Sites/prontopro-test/web/app_dev.php:28
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2444
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3222
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3071
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   6. call_user_func_array:{/home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109}() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:18:58 Europe/Rome] PHP   7. AppBundle\Controller\ProfileController->editAction() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:22:57 Europe/Rome] PHP Fatal error:  Cannot redeclare class AppBundle\Form\ProfileType in /home/netzach/Sites/prontopro-test/src/AppBundle/Form/ProfileExtendedType.php on line 45
+[30-Aug-2015 11:22:57 Europe/Rome] PHP Stack trace:
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   1. {main}() /home/netzach/Sites/prontopro-test/web/app_dev.php:0
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/netzach/Sites/prontopro-test/web/app_dev.php:28
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2444
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3222
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3071
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   6. call_user_func_array:{/home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109}() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   7. AppBundle\Controller\ProfileController->editAction() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\Controller->createForm() /home/netzach/Sites/prontopro-test/src/AppBundle/Controller/ProfileController.php:45
+[30-Aug-2015 11:22:57 Europe/Rome] PHP   9. Symfony\Component\Form\FormFactory->create() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php:250
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  10. Symfony\Component\Form\FormFactory->createBuilder() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/FormFactory.php:39
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  11. Symfony\Component\Form\FormFactory->createNamedBuilder() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/FormFactory.php:67
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  12. Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeDataCollectorProxy->buildForm() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/FormFactory.php:91
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  13. Symfony\Component\Form\ResolvedFormType->buildForm() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/Extension/DataCollector/Proxy/ResolvedTypeDataCollectorProxy.php:103
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  14. AppBundle\Form\ProfileType->buildForm() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/ResolvedFormType.php:135
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  15. spl_autoload_call() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/ResolvedFormType.php:29
+[30-Aug-2015 11:22:57 Europe/Rome] PHP  16. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/netzach/Sites/prontopro-test/vendor/symfony/symfony/src/Symfony/Component/Form/ResolvedFormType.php:29
+[30-Aug-2015 11:44:36 Europe/Rome] PHP Fatal error:  Call to undefined method AppBundle\Entity\ProfileRepository::createQueryBuilder() in /home/netzach/Sites/prontopro-test/src/AppBundle/Entity/ProfileRepository.php on line 15
+[30-Aug-2015 11:44:36 Europe/Rome] PHP Stack trace:
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   1. {main}() /home/netzach/Sites/prontopro-test/web/app_dev.php:0
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/netzach/Sites/prontopro-test/web/app_dev.php:28
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:2444
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3222
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3071
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   6. call_user_func_array:{/home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109}() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   7. AppBundle\Controller\ProfileController->showAction() /home/netzach/Sites/prontopro-test/app/bootstrap.php.cache:3109
+[30-Aug-2015 11:44:36 Europe/Rome] PHP   8. AppBundle\Entity\ProfileRepository->findProfileByIdJoined() /home/netzach/Sites/prontopro-test/src/AppBundle/Controller/ProfileController.php:75

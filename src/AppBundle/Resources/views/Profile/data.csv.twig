@@ -1,0 +1,6 @@
+{%- for entry in data -%}
+    {{- entry.profile.id -}},
+    {{- entry.profile.profileExtended.id -}},
+    {{- entry.count -}}
+    {%- if not loop.last -%}{{- '\n' -}}{%- endif -%}
+{%- endfor -%}

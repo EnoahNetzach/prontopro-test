@@ -1,0 +1,17 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block breadcrumb %}
+    {{ parent() }}
+    <li>{{ 'app.html.breadcrumb.show'|trans({'%id%': profile.id}) }}</li>
+{% endblock %}
+
+{% block body %}
+    <div class="row"><div class="col-sm-12">{{ profile }}</div></div>
+    <div class="row">
+        <div class="col-md-3">{{ 'app.entity.profile.description.label'|trans }}</div>
+        <div class="col-sm-9">{{ profile.description }}</div></div>
+    <div class="row">
+        <div class="col-md-3">{{ 'app.entity.profile_extended.descriptionExtended.label'|trans }}</div>
+        <div class="col-sm-9">{{ profile.profileExtended.descriptionExtended }}</div>
+    </div>
+{% endblock %}

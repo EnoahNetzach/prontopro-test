@@ -1,0 +1,28 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %}
+    {% if profile.id is same as(null) %}
+        {{ 'app.html.profile.title.new'|trans }}
+    {% else %}
+        {{ 'app.html.profile.title.edit'|trans({'%id%': profile.id}) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumb %}
+    {{ parent() }}
+    {% if profile.id is same as(null) %}
+        <li>{{ 'app.html.breadcrumb.new'|trans }}</li>
+    {% else %}
+        <li><a href="{{ path('profile_show', {id: profile.id}) }}">{{ 'app.html.breadcrumb.show'|trans({'%id%': profile.id}) }}</a></li>
+        <li>{{ 'app.html.breadcrumb.edit'|trans }}</li>
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.surname) }}
+        {{ form_row(form.description) }}
+        {{ form_row(form.profileExtended.descriptionExtended) }}
+    {{ form_end(form) }}
+{% endblock %}

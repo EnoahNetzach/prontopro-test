@@ -1,0 +1,28 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ app.request.locale }}"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="{{ app.request.locale }}"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="{{ app.request.locale }}"> <![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" lang="{{ app.request.locale }}"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+
+        {% block stylesheets %}{% endblock %}
+
+        {% block initial_javascripts %}{% endblock %}
+    </head>
+
+
+
+    <body class="page">
+        {% block header %}{% endblock %}
+
+        {% block pre_main %}{% endblock %}
+
+        <div class="page__main">
+            {% block main %}{% endblock %}
+        </div>
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
