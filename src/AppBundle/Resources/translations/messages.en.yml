@@ -23,6 +23,7 @@ app:
         layout.title: 'Test'
 
         profile.title:
+            show: 'Profile %id%'
             edit: 'Edit profile %id%'
             new: 'New profile'
 

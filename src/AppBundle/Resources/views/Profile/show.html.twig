@@ -1,17 +1,24 @@
 {% extends 'AppBundle::layout.html.twig' %}
 
+{% block title %}
+    {{ 'app.html.profile.title.show'|trans({'%id%': profile.id}) }}
+{% endblock %}
+
 {% block breadcrumb %}
     {{ parent() }}
     <li>{{ 'app.html.breadcrumb.show'|trans({'%id%': profile.id}) }}</li>
 {% endblock %}
 
 {% block body %}
-    <div class="row"><div class="col-sm-12">{{ profile }}</div></div>
+    <h2 class="text-center">{{ profile }}</h2>
     <div class="row">
-        <div class="col-md-3">{{ 'app.entity.profile.description.label'|trans }}</div>
-        <div class="col-sm-9">{{ profile.description }}</div></div>
+        <div class="col-md-3"><b>{{ 'app.entity.profile.description.label'|trans }}</b></div>
+        <div class="col-sm-9">{{ profile.description }}</div>
+    </div>
     <div class="row">
-        <div class="col-md-3">{{ 'app.entity.profile_extended.descriptionExtended.label'|trans }}</div>
+        <div class="col-md-3"><b>{{ 'app.entity.profile_extended.descriptionExtended.label'|trans }}</b></div>
         <div class="col-sm-9">{{ profile.profileExtended.descriptionExtended }}</div>
     </div>
+
+    <a href="{{ path('profile_edit', {id: profile.id}) }}" class="btn btn-default">{{ 'app.html.breadcrumb.edit'|trans }}</a>
 {% endblock %}
