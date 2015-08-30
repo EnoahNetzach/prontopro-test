@@ -94,10 +94,18 @@ class ProfileController extends BaseFormController
         $data = array();
 
         foreach ($profiles as $profile) {
+            $description = $profile->getDescription();
+            $descriptionExtended = $profile->getProfileExtended()->getDescriptionExtended();
+            // remove all the symbols from the descriptions
+            $description = preg_replace('/[^\p{L}\p{N}\s]/u', '', $description);
+            $descriptionExtended = preg_replace('/[^\p{L}\p{N}\s]/u', '', $descriptionExtended);
+
             // an array of unique words in the profile description
-            $descriptionArray = array_flip(explode(' ', $profile->getDescription()));
+            $descriptionArray = array_flip(explode(' ', $description));
+
             // an array of unique words in the extended profile description
-            $extendedArray = array_flip(explode(' ', $profile->getProfileExtended()->getDescriptionExtended()));
+            $extendedArray = array_flip(explode(' ', $descriptionExtended));
+
             $matches = array();
 
             foreach ($extendedArray as $string => $_) {
@@ -114,7 +122,6 @@ class ProfileController extends BaseFormController
                 'id' => $profile->getId(),
                 'id_extended' => $profile->getProfileExtended()->getId(),
                 'profile' => $profile,
-                'matches' => $matches,
                 'count' => count($matches),
             );
         }
